@@ -1,9 +1,9 @@
 // 引用模板
 import Vue from 'vue';
 import Router from 'vue-router';
-import listPage from './views/ImageList.vue'
-import detailPage from './views/detail.vue'
-import ShoppingCartPage from './views/ShoppingCart.vue'
+import A from './views/A.vue'
+import B from './views/B.vue'
+import C from './views/C.vue'
 
 Vue.use(Router)
 
@@ -11,15 +11,19 @@ export default new Router({
     routes:[
         {
             path:'/',
-            component:listPage
+            component:A
         },
         {
-            path:'/detail',
-            component:detailPage
+            path:'/A',
+            component:A
         },
         {
-            path:'/shoppingCart',
-            component:ShoppingCartPage
+            path:'/B',
+            component:B
+        },
+        {
+            path:'/C',
+            component:B
         },
     ]
 })

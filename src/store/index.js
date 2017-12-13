@@ -4,9 +4,6 @@ import Config from '../config.js'//自定义配置文件
 import Ajax from '../api/ajax.js'//api即数据请求
 import * as actions from './actions'
 import * as getters from './getters'
-import imagelist from './modules/imagelist'
-import cart from './modules/cart'
-import products from './modules/products'
 
 Vue.use(Vuex)
 
@@ -26,9 +23,6 @@ export default new Vuex.Store({
   actions,
   getters,
   modules: {
-    imagelist,
-    cart,
-    products
   },
 })
 
